@@ -1,0 +1,5 @@
+git init
+//initializes git init and its dependencies and generates repository and the files are tracked 
+
+git add .
+//add files into staging index 
