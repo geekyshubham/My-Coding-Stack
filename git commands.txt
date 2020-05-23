@@ -3,3 +3,6 @@ git init
 
 git add .
 //add files into staging index 
+
+git diff 
+//Shows difference between commits 
