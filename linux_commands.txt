@@ -1,0 +1,77 @@
+Shell  ($)
+sh bourne shell
+bash bourne again shell
+kshell korn shell
+z zshell
+fish friendly interactive shell
+
+Shell Shortcuts
+ctrl+w : last word  deletion
+ctrl+u  : delete line
+ctrl+a :move cursor to beginning
+crtl+e : move cursor to end
+alt+f : forward cursor
+alt+ b:cursor backward
+
+Terminal Browser
+apt-get install lynx
+
+Environment Variable (env)
+Setup Environment Variables ,Shell behaviour by mapping .bash or .bashrc file in /home
+Change Path:
+export PATH="usr/bin:$PATH"
+
+File Management (ls)
+Directory Stack Navigation  
+pushd  push dir in memory stack
+popd    pop dir out of stack
+dirs to chk  dir stack
+
+U users 
+G groups
+O others
+>chmod a +x filename.txt
+//To add execute permission to all users
+421
+000 means no permission
+001 only execute
+011 write and execute
+111 read write and execute
+100 only read
+101 read and execute
+110 read and write
+
+ex >chmod -u 777 filename.txt
+or >chmod -u+wxr filename.txt
+
+chown username filename
+Delete files with cat
+>cat /dev/null > filename.txt
+
+Delete with shred (overwrite)
+>shred -vzn 2 /home/file
+
+
+Redirection (>) & Piping ( | )
+-Redirection is used to stream output to a file
+-Piping in the sense to stream output to another program
+
+ls -l $(which ls) == ls -l "which ls"
+
+User Management
+>useradd -m username
+>passwd
+>userdel username
+chsh change shell user
+
+USERMODE
+
+>usermod
+attributes
+--expiredate
+--append --groups
+--home
+--shell
+--lock
+--unlock
+
