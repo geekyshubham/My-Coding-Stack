@@ -1,0 +1,30 @@
+
+Network Devices
+
+Router to connect two or more networks e.g. LAN or MAN
+
+Switches to connect two or more devices in an network e.g. LAN
+
+OSI Model
+Application Layer
+-protocols like http,smtp ftp transfer data streams
+
+Presentation Layer
+-it helps in presenting the data packets and supports interoperability
+
+Session Layer
+-interhost connection is established in this layer
+
+Transport Layer
+-message segmentation its transmission and maintains end to end connection using TCP (3 way handshake) & UDP
+
+Network Layer 
+-Data delivery using routers  using ospf (open shortest path first),bgp (border gateway protocol) & IS-IS (Intermediate system to intermediate system)
+
+Data Link Layer
+-access to media like network card
+
+Physical Layer
+-binary transmission using cables or wireless mediums
+
+
