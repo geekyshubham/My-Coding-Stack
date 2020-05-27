@@ -27,4 +27,42 @@ Data Link Layer
 Physical Layer
 -binary transmission using cables or wireless mediums
 
+TCP/IP
 
+Application Layer
+Transport Layer 
+Internet Layer
+Network Access Layer
+
+Hybrid 
+
+Application Layer 	
+Transport Layer
+Network Layer
+DataLink Layer
+Physical Layer 
+
+
+IPv4
+Internet address of 32Bits Octets for hosts  
+Unicast:
+Class A (0) range 0.0.0.0 to 127.255.255.255    8NetworkBits 24HostBits  Private 10.0.0.0 - 10.255.255.255
+Class B (10) range 128.0.0.0 to 191.255.255.255    16N 16H  Private 172.16.0.0 - 172.31.255.255
+Class C (110) range 192.0.0.0 to 223.255.255.255    24N 8H  Private 192.168.0.0 - 192.168.255.255
+Multicast:
+Class D (1110) range 224.0.0.0 to 239.255.255.255
+Class E (1111) range 240.0.0.0 to 255.255.255.255
+
+Directed Broadcast Address
+used for DdoS (smurf)
+host sends data to all devices in network 
+
+Local Broadcast Address
+255.255.255.255 is dropped by routers manual dhcp frwrding or dhcp relay configuratiion required
+DHCP Server
+Provides IP addresses dynamically to network devices
+
+CIDR classless Inter-domain routing
+way to represt the subnet mask 124.255.255.255/8 = 255.0.0.0
+
+NAT (Network Address Translation)
