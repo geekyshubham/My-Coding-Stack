@@ -45,7 +45,7 @@ Physical Layer
 
 IPv4
 Internet address of 32Bits Octets for hosts  
-Unicast:
+Unicast:S
 Class A (0) range 0.0.0.0 to 127.255.255.255    8NetworkBits 24HostBits  Private 10.0.0.0 - 10.255.255.255
 Class B (10) range 128.0.0.0 to 191.255.255.255    16N 16H  Private 172.16.0.0 - 172.31.255.255
 Class C (110) range 192.0.0.0 to 223.255.255.255    24N 8H  Private 192.168.0.0 - 192.168.255.255
@@ -64,5 +64,37 @@ Provides IP addresses dynamically to network devices
 
 CIDR classless Inter-domain routing
 way to represt the subnet mask 124.255.255.255/8 = 255.0.0.0
+SUBNETTING
+METHOD 
+1.BINARY 
+SUBNET  all host portion with 0's
+1ST HOST  all host portion with 0's except last 
+LAST HOST all host portion with 1's except last
+BROADCAST ADDRESS  all host portion with 1'sx`
 
+2.quick method
+128 64  32   16 8    4   2 1
+128 192 224 240 252 254  255
 NAT (Network Address Translation)
+
+Step 1:check where the subnet doesnt match 255 it where we split  
+e.g 172.16.35.123/20 has subnet mask 255.255.[240].0
+Step 2:do the math 240-256 = 16 so difference of 16 between networks 
+Step 3:network 1:0 network 2:16 network 3:32  ntwork 4:48
+by looking at network we can say the IP address containing 35 falls in network 3 so 
+subnet is 172.16.32.0
+first host 172.16.32.1
+brodcast address is nxt network - 1 so,
+172.16.48.0 - 1 which is 172.16.47.255
+last host is brodcast address - 1 so,
+172.16.47.254
+
+subnetting by network or host
+HOST:
+step 1 : calculate no. of bits required for hosts  eg. 14 hosts require  2^^4 - 2 = 14 so 4 bits required
+step 2 : then the no of bits are added into the subnet from left to right
+
+NETWORK
+step 1: suppose we want 30 subnets for as many hosts possible then we require 2^^5 =32 so we take 5 bits
+step 2 :then the no. of bits are added as subnet into the mask from right to left
+
