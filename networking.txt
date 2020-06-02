@@ -78,7 +78,7 @@ BROADCAST ADDRESS  all host portion with 1'sx`
 NAT (Network Address Translation)
 
 Step 1:check where the subnet doesnt match 255 it where we split  
-e.g 172.16.35.123/20 has subnet mask 255.255.[240].0
+e.g 172.16.35.123/20 has subnet mask 255.255.[240].0	
 Step 2:do the math 240-256 = 16 so difference of 16 between networks 
 Step 3:network 1:0 network 2:16 network 3:32  ntwork 4:48
 by looking at network we can say the IP address containing 35 falls in network 3 so 
@@ -98,3 +98,9 @@ NETWORK
 step 1: suppose we want 30 subnets for as many hosts possible then we require 2^^5 =32 so we take 5 bits
 step 2 :then the no. of bits are added as subnet into the mask from right to left
 
+Routing Protocol
+EIGRP bandwidth & delay
+OSPF bandwidth
+RIP hopcount
+ISIS
+BGP

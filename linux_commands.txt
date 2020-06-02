@@ -75,3 +75,14 @@ attributes
 --lock
 --unlock
 
+Networking
+netstat -a to see net traffic
+ping to ping a host 
+arp to see arp table
+route to see the route of traffic of host
+traceroute to trace route of traffic
+dig to see routes
+hosts to check host of an ip
+nslookup to resolve ip into addresses
+
+
