@@ -75,6 +75,12 @@ attributes
 --lock
 --unlock
 
+FILE MANAGEMENT
+find find a file
+grep regex
+sed /this/replace
+ln links(shorcuts)
+
 Networking
 netstat -a to see net traffic
 ping to ping a host 
@@ -84,5 +90,20 @@ traceroute to trace route of traffic
 dig to see routes
 hosts to check host of an ip
 nslookup to resolve ip into addresses
+tcpdump capture tcp traffic
+nc (netcat) to listen traffic
+
+firewall
+iptables
+
+process management
+ps aux
+top
 
 
+Disk Management 
+lsblk
+fdisk
+mkfs.ext4
+hdparm get hdd info
+smartctl /dev/sda to check oem and Storage details
