@@ -7,6 +7,9 @@ git add .
 git diff 
 //Shows difference between commits 
 
+git stash
+//temprorarily change the current state to last commit
+
 These are common Git commands used in various situations:
 
 start a working area (see also: git help tutorial)

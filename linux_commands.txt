@@ -99,7 +99,8 @@ iptables
 process management
 ps aux
 top
-
+bg
+fg
 
 Disk Management 
 lsblk
