@@ -19,3 +19,9 @@ function largestValues(array){
 }
 
 console.log (largestValues(array))
+
+
+
+//apply.bind method 
+
+console.log("values:"+ array.map(Function.apply.bind(Math.max,null)))
