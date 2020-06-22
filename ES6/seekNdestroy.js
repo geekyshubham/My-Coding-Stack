@@ -2,11 +2,18 @@
 var array1 = [2,4,5,3,6,2,5,4]
 var array2 = [2,4]
 
-function seekNdestroy(arr,arr2){
 
-    return arr.filter()
 
-    function check(value){
-        arr2.indexOf(val) == -1 ? 
-    }
+
+
+function destroyer (arr,arr2){
+
+    var args = arr.slice.call(arr2)
+return    arr.filter((val)=>{
+        return !args.includes(val)
+    })
 }
+
+console.log(destroyer(array1,array2))
+
+
