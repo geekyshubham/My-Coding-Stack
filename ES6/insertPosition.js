@@ -39,3 +39,11 @@ function postioner(arr,num){
 }
 
 console.log(postioner(array,num))
+
+
+function postionerx(arr,num){
+arr.push(num)
+arr.sort()
+return arr.indexOf(num)
+}
+console.log(postionerx(array,num))
