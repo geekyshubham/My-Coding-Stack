@@ -40,10 +40,11 @@ function postioner(arr,num){
 
 console.log(postioner(array,num))
 
+//postion using library functn
 
-function postionerx(arr,num){
-arr.push(num)
+function postionerx(arr,nums){
+arr.push(nums)
 arr.sort()
-return arr.indexOf(num)
+return arr.indexOf(nums)
 }
-console.log(postionerx(array,num))
+console.log(postionerx(array,nums))
